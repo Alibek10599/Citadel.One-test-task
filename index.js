@@ -37,8 +37,8 @@ class TezosBlock
 
   // Загружаем список необходмых блоков
   const list = [];
-  for(let block = 832543; block < 832546; block++){
-    let Block = new TezosBlock(block);
+  for(let block = 832543; block < 832547; block++){
+    const Block = new TezosBlock(block);
     await Block.loadData();
     list.push(Block.data);
   }
